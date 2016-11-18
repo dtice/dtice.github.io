@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	var leftOpen = "img/leftfaceopen.gif";
-	var leftClosed = "img/leftfaceclosed.gif";
-	var rightOpen = "img/rightfaceopen.gif";
-	var rightClosed = "img/rightfaceclosed.gif";
+	var leftOpen = "static/img/leftfaceopen.gif";
+	var leftClosed = "static/img/leftfaceclosed.gif";
+	var rightOpen = "static/img/rightfaceopen.gif";
+	var rightClosed = "static/img/rightfaceclosed.gif";
 	var nIntervId;
 	var t = 0;
 	var flip = false;
