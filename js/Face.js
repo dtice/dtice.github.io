@@ -8,10 +8,6 @@ $(document).ready(function(){
 	var flip = false;
 	eat();
 	moveit();
-	$("body").append("<button id="stopMusic">Stop Music</button>");
-	$("stopMusic").click(function(){
-		$("#music").stop();
-	});
 	function moveit() {
 		t += 0.05;
 
