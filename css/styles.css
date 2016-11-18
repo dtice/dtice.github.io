@@ -4,12 +4,12 @@
 	position: fixed;
 }
 #header{
-	background-color: green;
-	color: yellow;
+	background-color: grey;
+	color: red;
 	text-align: center;
 }
 body{
-	background-color: blue;
+	background-color: black;
 }
 .rotate90 {
     -webkit-transform: rotate(-90deg);

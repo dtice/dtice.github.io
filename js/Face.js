@@ -6,22 +6,19 @@ $(document).ready(function(){
 	var nIntervId;
 	var t = 0;
 	var flip = false;
-	$("#face").followCursor();
 	eat();
 	moveit();
 	function moveit() {
 		t += 0.05;
 
-		var r = 100;         // radius
-		var xcenter = 200;   // center X position
-		var ycenter = 200;   // center Y position
+		var r = .4 * $("body").height();         // radius
+		var xcenter = 0;   // center X position
+		var ycenter = (.5 * $("body").height());   // center Y position
 
-		var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
 		var newTop = Math.floor(ycenter + (r * Math.sin(t)));
 
 		$('#face').animate({
 			top: newTop,
-			left: newLeft,
 		}, 1, function() {
 			moveit();
 		});
