@@ -1,12 +1,29 @@
 #face{
 	width: 100px;
 	height: 100px;
-	position: fixed;
+	position: absolute;
 }
 #header{
+	font-family: 'Metal Mania', cursive;
+	padding: 5px;
 	background-color: grey;
 	color: red;
 	text-align: center;
+	font-size: 36px;
+	border-width: 3px;
+	border-style: dashed;
+	border-color: black;
+}
+#content{
+	margin-left: 100px;
+}
+#faceColumn{
+	background-color: red;
+	width: 120px;
+	height: 100%;
+}
+#stop{
+	float: right;
 }
 body{
 	background-color: black;

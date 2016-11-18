@@ -2,6 +2,8 @@
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/Face.js"></script>
 <script src="js/follow-cursor.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <!--
@@ -15,13 +17,26 @@
 			Replace cursor with my face
 -->
 <body>
-	<embed src="static/audio/metal.wav" hidden="true" autostart="true">
+	<audio id="music" autoplay="true" hidden="true" controls>
+		<source src="static/audio/metal.wav">
+	</audio>
 	<div id="header">
-		<h2>Welcome to my world</h2>
+		<div id="inheader" class="row">
+		<div class="col-lg-4">
+		<img id="beavis" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/>
+		</div>
+		<div class="col-lg-4"><p>Welcome to my world</p>
+		<p><em>A world of metal \m/</em></p></div>
+		<div class="col-lg-4"><img id="butthead" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/></div>
+		</div>
 	</div>
-	<div id="arena">
+	<div id="arena" class="row">
+	<div id="faceColumn" class="col-lg-2">
 	<img id="face" src="static/img/rightfaceclosed.gif" />
-	<img id="doot" src="static/img/doot.gif" />
+	</div>
+	<div id="content" class="col-lg-10">
+	<button class="btn btn-danger" id="stop">Stop Music</button>
+	</div>
 	</div>
 	
 </body>

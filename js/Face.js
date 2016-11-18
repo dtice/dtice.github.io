@@ -6,12 +6,16 @@ $(document).ready(function(){
 	var nIntervId;
 	var t = 0;
 	var flip = false;
+	$("#stop").click(function(){
+		$("audio").stop();
+	});
 	eat();
 	moveit();
+	
 	function moveit() {
 		t += 0.05;
 
-		var r = .4 * $("body").height();         // radius
+		var r = .5 * $("body").height();         // radius
 		var xcenter = 0;   // center X position
 		var ycenter = (.5 * $("body").height());   // center Y position
 
