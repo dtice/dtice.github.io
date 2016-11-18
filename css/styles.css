@@ -22,6 +22,7 @@ h3, p{
 	margin-left: 120px;
 }
 #faceColumn{
+	cursor: crosshair;
 	position: absolute;
 	background-color: red;
 	width: 120px;
