@@ -8,7 +8,9 @@ $(document).ready(function(){
 	var t = 0;
 	var flip = false;
 	$("#stop").click(function(){
-		$("audio").stop();
+		$.each($('audio'), function () {
+    this.pause();
+});
 	});
 	for(var i = 1; i <= faceNum; i++)
 	{
