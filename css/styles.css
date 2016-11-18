@@ -1,0 +1,17 @@
+#face{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+}
+#header{
+	background-color: green;
+	color: yellow;
+	text-align: center;
+}
+.rotate90 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
