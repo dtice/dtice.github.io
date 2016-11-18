@@ -1,3 +1,6 @@
+html{
+	cursor: crosshair;
+}
 #face{
 	width: 100px;
 	height: 100px;
