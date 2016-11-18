@@ -1,4 +1,4 @@
-#face{
+#face1, #face2, #face3, #face4, #face5, #face6, #face7, #face8, #face9, #face10{
 	width: 100px;
 	height: 100px;
 	position: relative;
@@ -10,9 +10,10 @@ h3, p{
 	font-size: 36px;
 }
 #header{
+	width: 100%;
+	text-align: center;
 	padding: 5px;
 	background-color: grey;
-	text-align: center;
 	border-width: 3px;
 	border-style: dashed;
 	border-color: black;
@@ -25,6 +26,9 @@ h3, p{
 	background-color: red;
 	width: 120px;
 	height: 150%;
+}
+#butthead{
+	float: right;
 }
 #bigboy{
 	float: left;
