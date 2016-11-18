@@ -20,8 +20,10 @@ p{
 	padding: 0px 50px;
 }
 #rightBar{
-	background-color: white;
-	height: 50%;
+	border-radius: 50px;
+	width: 120px;
+	background-color: red;
+	height: 150%;
 	margin-top: 10px;
 	float: right;
 }
@@ -36,6 +38,9 @@ p{
 }
 #content{
 	margin-left: 120px;
+}
+#sword{
+	position: relative;
 }
 #faceColumn{
 	margin-top: 10px;
@@ -52,8 +57,10 @@ p{
 #bigboy{
 	width: 100%;
 }
-#stop{
-	float: right;
+#stop, #contact, #about, #home{	
+
+	margin: 40px 0px 0px -25px;
+	float: left;
 }
 body{
 	background-color: black;
