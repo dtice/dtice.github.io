@@ -1,4 +1,5 @@
 <head>
+<title>Dill's World</title>
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/Face.js"></script>
 <script src="js/follow-cursor.js"></script>
@@ -6,17 +7,98 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<!--
-	Goals here: 
-		Make animation of my face
-			Open and close mouth
-		Animate the animation
-			Follow cursor lazily
-			Rotate/flip head to look at cursor
-		If animated animation x and y == cursor x and y:
-			Replace cursor with my face
--->
+
 <body>
+<script language="javascript" type="text/javascript">
+/* Visit http://www.yaldex.com/ for full source code
+and get more free JavaScript, CSS and DHTML scripts! */
+<!-- Begin
+var no = 50;
+var speed = 15;
+var ie4up = (document.all) ? 1 : 0;
+var ns4up = !ie4up;
+var s, x, y, sn, cs;
+var a, r, cx, cy;
+var i, doc_width = 800, doc_height = 600;
+if (ns4up) {
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+else
+if (ie4up) {
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+x = new Array();
+y = new Array();
+r = new Array();
+cx = new Array();
+cy = new Array();
+s = 8;
+for (i = 0; i < no; ++ i) {
+initRain();
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"red\">");
+document.write(",</font></div>");
+}
+function initRain() {
+a = 6;
+r[i] = 1;
+sn = Math.sin(a);
+cs = Math.cos(a);
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = Math.random() * doc_height + 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = cy[i];
+}
+function makeRain() {
+r[i] = 1;
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+function updateRain() {
+r[i] += s;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+function raindropNS() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+document.getElementById("dot"+i).style.top = y[i];
+document.getElementById("dot"+i).style.left = x[i];
+}
+setTimeout("raindropNS()", speed);
+}
+function raindropIE() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+document.all["dot"+i].style.pixelTop = y[i];
+document.all["dot"+i].style.pixelLeft = x[i];
+}
+setTimeout("raindropIE()", speed);
+}
+if (ns4up) {
+raindropNS();
+}
+else
+if (ie4up) {
+raindropIE();
+}
+//  End -->
+</script>
 	<audio id="music" autoplay="true" hidden="true" controls>
 		<source src="static/audio/metal.wav">
 	</audio>
@@ -25,12 +107,12 @@
 		<div class="col-lg-4">
 		<img id="beavis" class="img img-responsive" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/>
 		</div>
-		<div class="col-lg-4"><h3>Welcome to my world</h3>
-		<h3><em>A world of metal \m/</em></h3></div>
+		<div class="col-lg-4"><p>Welcome to</p>
+		<h2>DILL's WORLD</h2></div>
 		<div class="col-lg-4"><img class="img img-responsive" id="butthead" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/></div>
 		</div>
 	</div>
-	<div id="bigboy" class="container">
+	<div id="bigboy" class="container container-fluid">
 	<div id="arena" class="row">
 		<div id="faceColumn" class="col-lg-2">
 			<br/>
@@ -39,13 +121,21 @@
 			<br/>
 			<br/>
 		</div>
-		<div id="content" class="col-lg-10">
+		<div id="content" class="col-lg-9">
 			<h3>About Me</h3>
 			<div class="well"><p><-- Thats me over there</p><p>Here are some things that I like:</p></div>
 			<div class="row">
-				<div class="col-lg-4"><div class="well"><p>Death Metal</p><img height="320" width="250" src="https://s-media-cache-ak0.pinimg.com/736x/33/2a/f5/332af537c6b3fd68590f3039a09bb4bd.jpg" alt="idw"/></div></div><div class="col-lg-4"><div class="well"><p>Programming</p><img height="320" width="250" src="http://www.cvccweb.com/images/Computer_Program1.jpg" alt="prog"/></div></div><div class="col-lg-4"><div class="well"><p>Pizza</p><img height="200" width="250" src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" alt="pizza"/></div></div>
+				<div class="col-lg-4"><div class="well"><h3>Death Metal</h3><img height="320" width="250" src="https://s-media-cache-ak0.pinimg.com/736x/33/2a/f5/332af537c6b3fd68590f3039a09bb4bd.jpg" alt="idw"/></div></div><div class="col-lg-4"><div class="well"><h3>Programming</h3><img height="320" width="250" src="http://www.cvccweb.com/images/Computer_Program1.jpg" alt="prog"/></div></div><div class="col-lg-4"><div class="well"><h3>Pizza</h3><img height="200" width="250" src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" alt="pizza"/></div></div>
 			</div>
-			<button class="btn btn-danger" id="stop">Stop Music</button>
+			
+		</div>
+		<div id="rightBar">
+		<div id="rightMenu">
+		<button id="home" class="btn btn-danger">Home</button><br>
+		<button id="about" class="btn btn-danger">About Me</button><br>
+		<button id="contact" class="btn btn-danger">Contact</button><br>
+		<button class="btn btn-danger" id="stop">Stop Music</button><br>
+		</div>
 		</div>
 		</div>
 		</div>

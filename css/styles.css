@@ -4,10 +4,26 @@
 	position: relative;
 	margin-right: 10px;
 }
-h3, p{
+button{
+	margin-top: 25px;
+}
+h2, h3, h4{
 	font-family: 'Metal Mania', cursive;
 	color: red;
-	font-size: 36px;
+	font-size: 48px;
+}
+p{
+	color: red;
+	font-family: 'Times';
+}
+#rightMenu{
+	padding: 0px 50px;
+}
+#rightBar{
+	background-color: white;
+	height: 50%;
+	margin-top: 10px;
+	float: right;
 }
 #header{
 	width: 100%;
@@ -15,13 +31,15 @@ h3, p{
 	padding: 5px;
 	background-color: grey;
 	border-width: 3px;
-	border-style: dashed;
-	border-color: black;
+	border-style: solid;
+	border-color: red;
 }
 #content{
 	margin-left: 120px;
 }
 #faceColumn{
+	margin-top: 10px;
+	border-radius: 50px;
 	cursor: crosshair;
 	position: absolute;
 	background-color: red;
@@ -32,7 +50,7 @@ h3, p{
 	float: right;
 }
 #bigboy{
-	float: left;
+	width: 100%;
 }
 #stop{
 	float: right;

@@ -20,9 +20,9 @@ $(document).ready(function(){
 	function moveit(num) {
 		t += 0.05;
 
-		var r = .5 * $("body").height();         // radius
+		var r = 100;         // radius
 		var xcenter = 0;   // center X position
-		var ycenter = (.5 * $("body").height());   // center Y position
+		var ycenter = 100;   // center Y position
 
 		
 		for(var i = 1; i <= num; i++)
