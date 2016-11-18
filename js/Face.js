@@ -1,13 +1,31 @@
 $(document).ready(function(){
-	var leftOpen = "img/leftfaceopen.jpg";
-	var leftClosed = "img/leftfaceclosed.jpg";
-	var rightOpen = "img/rightfaceopen.jpg";
-	var rightClosed = "img/rightfaceclosed.jpg";
+	var leftOpen = "img/leftfaceopen.gif";
+	var leftClosed = "img/leftfaceclosed.gif";
+	var rightOpen = "img/rightfaceopen.gif";
+	var rightClosed = "img/rightfaceclosed.gif";
 	var nIntervId;
+	var t = 0;
 	var flip = false;
 	$("#face").followCursor();
 	eat();
-	
+	moveit();
+	function moveit() {
+		t += 0.05;
+
+		var r = 100;         // radius
+		var xcenter = 200;   // center X position
+		var ycenter = 200;   // center Y position
+
+		var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+		var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+
+		$('#face').animate({
+			top: newTop,
+			left: newLeft,
+		}, 1, function() {
+			moveit();
+		});
+	}
 	function eat(){
 		nIntervId = setInterval(eating, 500);
 	}
