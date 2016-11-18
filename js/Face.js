@@ -24,7 +24,7 @@ $(document).ready(function(){
 		});
 	}
 	function eat(){
-		nIntervId = setInterval(eating, 500);
+		nIntervId = setInterval(eating, 200);
 	}
 	function eating(){
 		if(!flip)
