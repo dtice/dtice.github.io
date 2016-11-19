@@ -4,44 +4,58 @@
 	position: relative;
 	margin-right: 10px;
 }
-button{
-	margin-top: 25px;
-}
 h2, h3, h4{
+	text-shadow: 2px 2px #000000;
 	font-family: 'Metal Mania', cursive;
 	color: red;
-	font-size: 48px;
 }
 p{
 	text-align: center;
-	color: red;
+	color: black;
 	font-family: 'Times';
 }
-#rightMenu{
-	padding: 0px 50px;
+button{
+	position: relative;
+	margin: 0px 100px 0px 100px;
+	z-index: 1;
 }
-#rightBar{
-	border-radius: 50px;
-	width: 120px;
-	background-color: red;
-	height: 150%;
-	margin-top: 10px;
-	float: right;
+.centered {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+}
+.flip{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bigboy{
+	width: 100%;
+}
+#illuminati{
+	z-index: 0;
+	width: 200px;
+	height: 180px;
+}
+.hidden{
+	display: none;
+}
+#contactBar{
+	width: 100%;
+	text-align: center;
+	background-color: grey;
 }
 #header{
 	width: 100%;
 	text-align: center;
 	padding: 5px;
 	background-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	border-color: red;
 }
 #content{
 	margin-left: 120px;
-}
-#sword{
-	position: relative;
 }
 #faceColumn{
 	margin-top: 10px;
@@ -55,13 +69,10 @@ p{
 #butthead{
 	float: right;
 }
-#bigboy{
+#menuBar{
+	text-align: center;
 	width: 100%;
-}
-#stop, #contact, #about, #home{	
-
-	margin: 40px 0px 0px -25px;
-	float: left;
+	background-color: black;
 }
 body{
 	background-color: black;

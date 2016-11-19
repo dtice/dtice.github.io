@@ -100,7 +100,7 @@ raindropIE();
 }
 //  End -->
 </script>
-	<audio id="music" autoplay="true" hidden="true" controls>
+	<audio id="music" autoplay="false" hidden="true" controls>
 		<source src="static/audio/metal.mp3">
 	</audio>
 	<div id="header" class="container container-fluid">
@@ -108,11 +108,18 @@ raindropIE();
 		<div class="col-lg-4">
 		<img id="beavis" class="img img-responsive" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/>
 		</div>
-		<div class="col-lg-4"><p>Welcome to</p>
-		<h2 class="animated bounceInLeft">DILL's WORLD</h2></div>
+		<a href="#">
+		<img id="illuminati" class="centered" src="http://ajournalofmusicalthings.com/wp-content/uploads/Illuminati-Logo.png" alt=""/></a>
+		<div class="col-lg-4"><h4>Welcome to</h4>
+		<h2 class="animated bounceInLeft" style="font-size: 48px">DILL's WORLD</h2></div>
 		<div class="col-lg-4"><img class="img img-responsive" id="butthead" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/></div>
 		</div>
 	</div>
+	<div id="menuBar">
+			<button id="homeButton" class="btn btn-danger">Home</button>
+			<button id="contactButton" class="btn btn-danger">Contact</button>
+		</div>
+	<div id="contactBar" hidden="true">Feel free to express all concerns and comments to dillon.tice@gmail.com</div>
 	<div id="bigboy" class="container container-fluid">
 	<div id="arena" class="row">
 		<div id="faceColumn" class="col-lg-2">
@@ -122,21 +129,12 @@ raindropIE();
 			<br/>
 			<br/>
 		</div>
-		<div id="content" class="col-lg-9">
-			<span><h3>About Me</h3><img id="sword" src="static/img/sword.png" alt="sword" width="96" height="54"/></span>
-			<div class="well"><h3>Here are some of my worldly fetishes: </div>
+		<div id="content" class="col-lg-10">
+			<div><h3>Here are some of my worldly fetishes: </div>
 			<div class="row">
 				<div class="col-lg-4"><div class="well"><h3>Death Metal</h3><img height="320" width="250" src="https://s-media-cache-ak0.pinimg.com/736x/33/2a/f5/332af537c6b3fd68590f3039a09bb4bd.jpg" alt="idw"/><p>I Declare War is my favorite band I think.</p></div></div><div class="col-lg-4"><div class="well"><h3>Programming</h3><img height="320" width="250" src="http://www.cvccweb.com/images/Computer_Program1.jpg" alt="prog"/><p>I really like programming.</p></div></div><div class="col-lg-4"><div class="well"><h3>Pizza</h3><img height="200" width="250" src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" alt="pizza"/><p>I can make a pepperoni pizza in less than 30 seconds.</p></div></div>
 			</div>
 			
-		</div>
-		<div id="rightBar">
-		<div id="rightMenu">
-		<button id="home" class="btn btn-danger">Home</button><br>
-		<button id="about" class="btn btn-danger">About Me</button><br>
-		<button id="contact" class="btn btn-danger">Contact</button><br>
-		<button class="btn btn-danger" id="stop">Stop Music</button><br>
-		</div>
 		</div>
 		</div>
 		</div>
