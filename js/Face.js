@@ -97,7 +97,7 @@ $(document).ready(function(){
 		}
 	}
 	function eat(){
-		nIntervId = setInterval(eating, 200);
+		nIntervId = setInterval(eating, 100);
 	}
 	function eating(){
 		if(!flip)
