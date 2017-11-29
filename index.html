@@ -10,96 +10,7 @@
 </head>
 
 <body>
-<script language="javascript" type="text/javascript">
-/* Visit http://www.yaldex.com/ for full source code
-and get more free JavaScript, CSS and DHTML scripts! */
-<!-- Begin
-var no = 50;
-var speed = 15;
-var ie4up = (document.all) ? 1 : 0;
-var ns4up = !ie4up;
-var s, x, y, sn, cs;
-var a, r, cx, cy;
-var i, doc_width = 800, doc_height = 600;
-if (ns4up) {
-doc_width = self.innerWidth;
-doc_height = self.innerHeight;
-}
-else
-if (ie4up) {
-doc_width = document.body.clientWidth;
-doc_height = document.body.clientHeight;
-}
-x = new Array();
-y = new Array();
-r = new Array();
-cx = new Array();
-cy = new Array();
-s = 8;
-for (i = 0; i < no; ++ i) {
-initRain();
-document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
-document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
-document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"red\">");
-document.write(",</font></div>");
-}
-function initRain() {
-a = 6;
-r[i] = 1;
-sn = Math.sin(a);
-cs = Math.cos(a);
-cx[i] = Math.random() * doc_width + 1;
-cy[i] = Math.random() * doc_height + 1;
-x[i] = r[i] * sn + cx[i];
-y[i] = cy[i];
-}
-function makeRain() {
-r[i] = 1;
-cx[i] = Math.random() * doc_width + 1;
-cy[i] = 1;
-x[i] = r[i] * sn + cx[i];
-y[i] = r[i] * cs + cy[i];
-}
-function updateRain() {
-r[i] += s;
-x[i] = r[i] * sn + cx[i];
-y[i] = r[i] * cs + cy[i];
-}
-function raindropNS() {
-for (i = 0; i < no; ++ i) {
-updateRain();
-if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
-makeRain();
-doc_width = self.innerWidth;
-doc_height = self.innerHeight;
-}
-document.getElementById("dot"+i).style.top = y[i];
-document.getElementById("dot"+i).style.left = x[i];
-}
-setTimeout("raindropNS()", speed);
-}
-function raindropIE() {
-for (i = 0; i < no; ++ i) {
-updateRain();
-if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
-makeRain();
-doc_width = document.body.clientWidth;
-doc_height = document.body.clientHeight;
-}
-document.all["dot"+i].style.pixelTop = y[i];
-document.all["dot"+i].style.pixelLeft = x[i];
-}
-setTimeout("raindropIE()", speed);
-}
-if (ns4up) {
-raindropNS();
-}
-else
-if (ie4up) {
-raindropIE();
-}
-//  End -->
-</script>
+
 	<audio id="music" autoplay="false" hidden="true" controls>
 		<source src="static/audio/metal.mp3">
 	</audio>
@@ -109,9 +20,8 @@ raindropIE();
 		<img id="beavis" class="img img-responsive" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/>
 		</div>
 		<a href="#">
-		<img id="illuminati" class="centered" src="http://ajournalofmusicalthings.com/wp-content/uploads/Illuminati-Logo.png" alt=""/></a>
-		<div class="col-lg-4"><h4>Welcome to</h4>
-		<h2 class="animated bounceInLeft" style="font-size: 48px">DILL's WORLD</h2></div>
+		<div class="col-lg-4" style="font-size: 48px"><h4>Dillon</h4>
+		<h2 class="animated bounceInLeft" style="font-size: 36px">Tice</h2></div>
 		<div class="col-lg-4"><img class="img img-responsive" id="butthead" height="150px" width="200px" src="https://m.popkey.co/47a9a6/Lq3aq.gif" alt="metal"/></div>
 		</div>
 	</div>
@@ -130,9 +40,9 @@ raindropIE();
 			<br/>
 		</div>
 		<div id="content" class="col-lg-10">
-			<div><h3>Here are some of my worldly fetishes: </div>
+			<div><h3>Why you should hire me: </div>
 			<div class="row">
-				<div class="col-lg-4"><div class="well"><h3>Death Metal</h3><img height="320" width="250" src="https://s-media-cache-ak0.pinimg.com/736x/33/2a/f5/332af537c6b3fd68590f3039a09bb4bd.jpg" alt="idw"/><p>I Declare War is my favorite band I think.</p></div></div><div class="col-lg-4"><div class="well"><h3>Programming</h3><img height="320" width="250" src="http://www.cvccweb.com/images/Computer_Program1.jpg" alt="prog"/><p>I really like programming.</p></div></div><div class="col-lg-4"><div class="well"><h3>Pizza</h3><img height="200" width="250" src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" alt="pizza"/><p>I can make a pepperoni pizza in less than 30 seconds.</p></div></div>
+				<div class="col-lg-4"><div class="well"><h3>Work Ethic</h3><img height="320" width="250" src="http://www.youmustbetrippin.com/wp-content/uploads/2014/12/496800929.jpg" alt="labor"/><p>Employed since age 15, I'm no stranger to hard work. </p></div></div><div class="col-lg-4"><div class="well"><h3>Programming</h3><img height="320" width="250" src="https://fthmb.tqn.com/4Xb_EDuXJ1Mifs3LkPVpWtxCh2Y=/2816x2112/filters:no_upscale()/about/PSP-Homebrew-599de3cf0d327a0011cef2d8.jpg"/><p>Computers are my passion. I've been hacking PSP's since they first came out.</p></div></div><div class="col-lg-4"><div class="well"><h3>People Person</h3><img height="200" width="250" src="https://rixxblog.files.wordpress.com/2011/09/people-person.jpg" alt="communication"/><p>Whatever the opposite of shy is, that's me.</p></div></div>
 			</div>
 			
 		</div>
