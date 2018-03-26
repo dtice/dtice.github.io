@@ -1,6 +1,11 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
-  image:
+- title: Archives
+  url: /archives/
+  excerpt: "Archives of posts from Christmas past"
+  image: bio-photo.jpg
+  
+- title: Contact
+  url: /contact/
+  excerpt: "Contact me"
+  image: bio-photo.jpg

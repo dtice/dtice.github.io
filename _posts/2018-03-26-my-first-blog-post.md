@@ -1,13 +1,13 @@
 ---
-layout: {{ layout }}
-title:
-modified:
+layout: article
+title: My First Blog Post!
+modified: Dillon Tice
 categories: 
 excerpt:
 tags: [first, post, best, post]
 image:
-  feature:
-  teaser:
-  thumb: http://hanassets.nd.gov/images/product/test.png
+  feature: bio-photo.jpg
+  teaser: bio-photo.jpg
+  thumb: bio-photo.jpg
 ---
-Here is some stuff and some other stuff
+Yeeeeeeeaaaaaaaaa Boiiiiiiiiiiiiiiiiii
